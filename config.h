@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "xos4 Terminus:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 1;
+static char *font = "terminus:pixelsize=15:antialias=true:autohint=true";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -25,7 +25,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.1;
+static float chscale = 1.0;
 
 /*
  * word delimiter string
@@ -83,8 +83,8 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.95;           //< alpha value used when the window is focused.
-float alphaUnfocussed = 0.85; //< alpha value used when the focus is lost
+float alpha = 0.94;           //< alpha value used when the window is focused.
+float alphaUnfocussed = 0.8; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
